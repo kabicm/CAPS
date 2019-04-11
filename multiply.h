@@ -9,7 +9,6 @@
 #include "communication.h"
 #include <assert.h>
 
-
 void multiply( double *A, double *B, double *C, MatDescriptor desc, char* pattern=NULL );
 void multiplyInternal( double *A, double *B, double *C, MatDescriptor desc, double *work );
 void strassenBFS( double *A, double *B, double *C, MatDescriptor desc, double* work );

@@ -1,6 +1,5 @@
 #include <mpi.h>
 #include <stdlib.h>
-#include "library.h"
 
 #ifndef COMMUNICATION_H
 #define COMMUNICATION_H

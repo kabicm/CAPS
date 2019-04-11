@@ -1,6 +1,7 @@
 #include "communication.h"
 #include "rectmm.h"
 #include "rectsizes.h"
+#include "library.h"
 #include <cmath>
 #include <vector>
 #include <tuple>
@@ -9,8 +10,6 @@
 #include <iostream>
 #include <algorithm>
 #include <sstream>
-#include <vector>
-#include <tuple>
 
 void fillInt( double *A, int n ) {
   for( int i = 0; i < n; i++ )

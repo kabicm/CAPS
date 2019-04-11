@@ -9,7 +9,7 @@ double maxUsedMemory = 0.;
 
 double* allocate( long long s ) {
   usedMemory += s;
-  maxUsedMemory = max(usedMemory,maxUsedMemory);
+  maxUsedMemory = std::max(usedMemory,maxUsedMemory);
   return (double*) malloc( s*sizeof(double) );
 }
 

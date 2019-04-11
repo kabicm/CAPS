@@ -1,5 +1,4 @@
 #include <cstring>
-#define NUM_THREADS 18
 
 #ifndef LIBRARY_H
 #define LIBRARY_H

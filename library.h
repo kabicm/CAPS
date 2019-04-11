@@ -1,4 +1,4 @@
-#define max(a,b) (((a)>(b))?(a):(b))
+// #define max(a,b) (((a)>(b))?(a):(b))
 #ifndef LIBRARY_H
 #define LIBRARY_H
 

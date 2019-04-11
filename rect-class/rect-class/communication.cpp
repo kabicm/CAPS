@@ -7,7 +7,6 @@
 #define TAG_RED8 2
 #define TAG_RED  4
 #define TAG_DIST 3 
-
 /*
   We assume that there are P=2^k processors.  At all times a power of 2 processors are working together on a task, and they are contiguously numbered.  That is, if rank i is working on a task with (x-1) other processors, those x processors have ranks floor(i/x)*x,...,(floor(i/x)+1)*x-1
  */
@@ -21,7 +20,6 @@ int getRank() {
 void initCommunication( int *argc, char ***argv ) {
   MPI_Init(argc, argv);
   MPI_Comm_rank( MPI_COMM_WORLD, &rank );
-  omp_set_num_threads(NUM_THREADS);
 }
 
 int getRelativeRank( int xOld, int xNew ) {
