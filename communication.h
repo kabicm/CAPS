@@ -5,6 +5,7 @@
 #include <cstring>
 #include "matrix.h"
 #include "library.h"
+#include "./rect-class/library.h"
 #include "counters.h"
 
 void initCommunication(int *argc, char ***argv, int randomize = 0);

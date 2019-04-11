@@ -55,7 +55,7 @@ int main( int argc, char **argv ) {
       nrecReq += 1;
       rsize /= 2;
     }
-    nrecReq = max(log7nProcs, nrecReq);
+    nrecReq = std::max(log7nProcs, nrecReq);
     if( getRank() == 0 )
       printf("Setting nrec=%d\n", nrecReq);
   }

@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include "library.h"
+#include <algorithm>
 
 // everything is in units of doubles
 const double memoryBlowupFactor = 4.; // This seems to be right
