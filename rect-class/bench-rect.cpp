@@ -171,14 +171,14 @@ int main( int argc, char **argv ) {
 
       // fill the matrices with random data
       srand48(getRank());
-      fillInt( A, getSizeRect(m,1,k,P) );
-      fillInt( B, getSizeRect(1,n,k,P) );
   }
 
   std::vector<long long> times;
 
   for (int i = 0; i < n_iter; ++i) {
       if (rank < P) {
+          fillInt( A, getSizeRect(m,1,k,P) );
+          fillInt( B, getSizeRect(1,n,k,P) );
           fillInt( C, getSizeRect(m,n,1,P));
       }
 
